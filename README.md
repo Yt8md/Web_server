@@ -20,6 +20,8 @@ Design of webserver workflow
 
 Implementation using python code
 
+## Program:
+```
 from http.server import HTTPserver, BaseHTTPRequestHandler
 
 content = """
@@ -44,13 +46,12 @@ class HelloHandler(BaseHTTPRequestHandler):
 server_address = ('', 80)
 http = HTTPServer(server_address, HelloHandler)
 httpd.server_forever()
-
-
+```
 
 ## Step 4:
 
 Serving the HTML pages.
-
+ 
 ## Step 5:
 
 Testing the webserver
